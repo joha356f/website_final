@@ -1,0 +1,135 @@
+main {
+  background-image: url(./assets/web_bg.svg);
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+body {
+  background-color: rgb(108, 18, 44);
+}
+
+img {
+  max-width: 500px;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(162, 137, 125);
+  font-family: quiche-text;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(199, 167, 79);
+}
+
+a:hover {
+  color: hsl(348, 58%, 42%);
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  list-style: none;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  padding-top: 0.5em;
+  font-size: 70px;
+  font-family: quiche-text;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(9, 6, 2);
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  font-family: quiche-text;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(199, 167, 79);
+}
+
+/* layout */
+/* index */
+.grid_2_2 {
+  display: grid;
+  grid-template-columns: 3 1fr;
+  grid-template-rows: 2 1fr;
+  justify-content: center;
+  gap: 2.7em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.spil {
+  grid-column: 1;
+  grid-row: 1;
+}
+.ide {
+  grid-column: 2;
+  grid-row: 1;
+}
+.assets {
+  grid-column: 1;
+  grid-row: 2;
+}
+.teknik {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+p {
+  color: rgb(222, 222, 222);
+  font-family: elza-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grid_1 {
+  justify-content: center;
+  margin-left: 18em;
+  margin-right: 18em;
+}
+
+.grid_1 p {
+  font-size: 18px;
+}
+
+/* assets */
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+gallery > img {
+  width: 30%;
+  height: auto;
+  margin-inline: auto;
+}
+
+img {
+  max-width: 50%;
+  padding: 5%;
+  margin-inline: auto;
+}
+
+.grafik_gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.diagrams {
+  display: flex;
+  flex-wrap: wrap;
+}

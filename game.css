@@ -1,0 +1,328 @@
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#start {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url("./assets/titlescreen.svg");
+}
+#instructions {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url("./assets/instructions.svg");
+}
+
+#play_button_container {
+  width: 18%;
+  aspect-ratio: 455/180;
+  left: 30%;
+  top: 65%;
+  position: absolute;
+}
+#play_button_sprite {
+  background-image: url("./assets/play.button.svg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+#play_button_container2 {
+  width: 18%;
+  aspect-ratio: 455/180;
+  left: 58%;
+  top: 60%;
+  position: absolute;
+}
+#play_button_sprite2 {
+  background-image: url("./assets/play.button.svg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+#game_over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url("./assets/gameover.svg");
+}
+#level_complete {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url("./assets/levelcomplete.svg");
+}
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("./assets/game.background.svg");
+  background-size: cover;
+}
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#game_foreground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("./assets/curtains.svg");
+  background-size: cover;
+  pointer-events: none;
+}
+
+/* ui */
+
+#game_ui {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* time */
+#time_board_container {
+  width: 15%;
+  aspect-ratio: 375/355;
+  left: 85%;
+  position: absolute;
+}
+#time_board_sprite {
+  background-image: url("./assets/clock1.svg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+#time_arrow {
+  position: absolute;
+  top: 24%;
+  left: 52%;
+  width: 2%;
+  height: 25%;
+  border-radius: 50%;
+  transform-origin: bottom center;
+  background-color: black;
+}
+/* life */
+
+#life_board_container {
+  width: 15%;
+  top: 5%;
+  left: 1%;
+  aspect-ratio: 570/180;
+  background-size: 100%;
+  position: absolute;
+}
+
+#life_board_sprite {
+  background-image: url("./assets/life_board.svg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+#heart_container1 {
+  width: 2.5%;
+  top: 7%;
+  left: 4%;
+  aspect-ratio: 95/85;
+  background-size: 100%;
+  position: absolute;
+}
+
+#heart_sprite1 {
+  background-image: url("./assets/life1.svg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+#heart_container2 {
+  width: 2.5%;
+  top: 7%;
+  left: 7%;
+  aspect-ratio: 95/85;
+  background-size: 100%;
+  position: absolute;
+}
+
+#heart_sprite2 {
+  background-image: url("./assets/life1.svg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+#heart_container3 {
+  width: 2.5%;
+  top: 7%;
+  left: 10%;
+  aspect-ratio: 95/85;
+  background-size: 100%;
+  position: absolute;
+}
+
+#heart_sprite3 {
+  background-image: url("./assets/life1.svg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+/* points */
+
+#score_board_container {
+  width: 15%;
+  top: 15%;
+  left: 1%;
+  aspect-ratio: 570/180;
+  background-size: 100%;
+  position: absolute;
+  background-image: url("./assets/life_board.svg");
+  background-size: 100%;
+}
+#score_board_sprite {
+  width: 20%;
+  height: auto;
+  color: aliceblue;
+  font-size: 3rem;
+  text-align: center;
+  top: 10%;
+  left: 40%;
+  position: absolute;
+}
+/* game icons */
+
+#eurobill_container1 {
+  width: 5%;
+  aspect-ratio: 16/13;
+
+  position: absolute;
+}
+#eurobill_sprite1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/cashnote.svg");
+  background-size: 100%;
+}
+#eurobill_container2 {
+  width: 5%;
+  aspect-ratio: 16/13;
+  position: absolute;
+}
+#eurobill_sprite2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/cashnote.svg");
+  background-size: 100%;
+  transform: rotate(20deg);
+}
+
+#taxbill_container1 {
+  width: 5%;
+  aspect-ratio: 150/155;
+
+  position: absolute;
+}
+#taxbill_sprite1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/tax.bill.svg");
+  background-size: 100%;
+  transform: rotate(30deg);
+}
+#taxbill_container2 {
+  width: 5%;
+  aspect-ratio: 150/155;
+  position: absolute;
+}
+#taxbill_sprite2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/tax.bill.svg");
+  background-size: 100%;
+  transform: rotate(330deg);
+}
+
+#eurocoin_container2 {
+  width: 2%;
+  aspect-ratio: 2/2;
+  top: 30%;
+  left: 35%;
+  position: absolute;
+}
+
+#eurocoin_sprite2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/coin.svg");
+  background-size: 100%;
+}
+
+#score {
+  background-color: aqua;
+  height: 1em;
+  width: 1em;
+}
+
+.click_stop {
+  pointer-events: none;
+}
+
+#level_complete_points {
+  color: rgb(4, 3, 3);
+  font-size: 2em;
+  left: 25%;
+  top: 50%;
+  position: absolute;
+  font-family: stilson, serif;
+  font-weight: 700;
+  font-style: italic;
+}
+#game_over_points {
+  color: rgb(4, 3, 3);
+  font-size: 2em;
+  left: 25%;
+  top: 50%;
+  position: absolute;
+  font-family: stilson, serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#sounds {
+  display: none;
+}

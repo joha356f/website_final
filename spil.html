@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/evi1kvs.css">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <footer> <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="spil.html">Spil</a></li>
+        <li><a href="ide.html">Ide</a></li>
+        <li><a href="assets.html">Assets</a></li>
+        <li><a href="teknik.html">Teknik</a></li>
+        <li><a href="grafik.html">Grafik</a></li>
+      </ul>
+    </nav></footer>
+    <div id="screen">
+      <div id="score"></div>
+      <div id="game">
+        <div id="game_background"></div>
+        <!-- game elements -->
+        <div id="game_elements">
+          <div id="eurobill_container1">
+            <div id="eurobill_sprite1"></div>
+          </div>
+          <div id="eurobill_container2">
+            <div id="eurobill_sprite2"></div>
+          </div>
+
+          <div id="taxbill_container1">
+            <div id="taxbill_sprite1"></div>
+          </div>
+          <div id="taxbill_container2">
+            <div id="taxbill_sprite2"></div>
+          </div>
+        </div>
+        <div id="game_foreground"></div>
+
+        <!-- game ui  -->
+
+        <!-- score -->
+        <div id="game_ui">
+          <div id="score_board_container">
+            <div id="score_board_sprite"></div>
+          </div>
+          <!-- lives -->
+          <div id="life_board_container">
+            <div id="life_board_sprite"></div>
+          </div>
+          <div id="heart_container1">
+            <div id="heart_sprite1"></div>
+          </div>
+          <div id="heart_container2">
+            <div id="heart_sprite2"></div>
+          </div>
+          <div id="heart_container3">
+            <div id="heart_sprite3"></div>
+          </div>
+          <!-- time -->
+          <div id="time_board_container">
+            <div id="time_board_sprite"></div>
+            <div id="time_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div id="instructions"><div id="play_button_container2">
+          <div id="play_button_sprite2"></div>
+      </div></div>
+        
+      <div id="start">
+        <div id="play_button_container">
+          <div id="play_button_sprite"></div>
+        </div>
+      </div>
+      <div id="game_over">
+        <div id="game_over_points"></div>
+      </div>
+      <div id="level_complete">
+        <div id="level_complete_points"></div>
+      </div>
+  <!-- sounds -->
+
+      <div id="sounds">
+        <audio src="sound/background_music.mp3" id="background_music" controls></audio>
+        <audio src="sound/coin.mp3" id="coin_sound" controls></audio>
+        <audio src="sound/moo.mp3" id="moo_sound" controls></audio>
+        <audio src="sound/game_over.mp3" id="gameover_sound" controls></audio>
+        <audio src="sound/level_complete.mp3" id="welldone_sound" controls></audio>
+      </div>
+    
+  </body>
+  <script src="spil.js"></script>
+</html>
